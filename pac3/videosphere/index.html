@@ -1,0 +1,24 @@
+ <HTML>
+
+ 	<!--- PAC 3 - Realitat virtual --->
+ 	<!--- Podeu veure l'escena funcionant a https://nmartivi.github.io/Realitat-virtual-NM --->
+
+    <HEAD>   
+    	<title>PAC 1 - VIDEOSPHERE</title>
+    	<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    	<script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js">  </script>
+    </HEAD>
+
+    <BODY>
+    	<a-scene>
+
+            <a-assets>
+                <video id="video" autoplay loop="true" src="video360.mp4">
+            </a-assets>
+
+            <a-videosphere src="#video"></a-videosphere>
+    
+
+    	</a-scene>
+    </BODY>
+  <HTML>
