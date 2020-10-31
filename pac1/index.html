@@ -1,0 +1,44 @@
+ <HTML>
+
+ 	<!--- PAC 1 - Realitat virtual --->
+ 	<!--- Podeu veure l'escena funcionant a https://nmartivi.github.io/Realitat_virtual/index.html --->
+
+    <HEAD>   
+    	<title>PAC 1</title>
+    	<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    	<script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js">  </script>
+    </HEAD>
+
+    <BODY>
+    	<a-scene environment="preset: japan">
+    		
+    		<a-assets>
+        		<img id="boxTexture" src="recursos/granit.jpg">
+        		<a-asset-item id="objecte" src="recursos/monkey03.obj"> </a-asset-item>
+        		<a-asset-item id="objecte-mtl" src="recursos/monkey03.mtl"> </a-asset-item>	
+      		</a-assets> 
+
+      		<a-text value="Acosta el cursor al cub" color="#ffffff" position="1 0.5 -6" scale="3 3 3"></a-text>
+      		
+      		<a-box position="5 3 -5" rotation="45 90 180" scale="0.5 0.5 0.5" src="#boxTexture">
+      			<a-animation attribute="scale" direction="alternate" dur="2000" repeat="indefinite" to="2 2 2"></a-animation>
+      			<a-animation attribute="rotation" begin="mouseenter" dur="2000" to="360 45 45"></a-animation>
+      		</a-box>
+      		
+      		<a-entity obj-model="obj: #objecte; mtl: #objecte-mtl"
+	  			material="color: red; opacity: 1.0"
+	  			position="4 2 1"
+	  			rotation="0 0 0">
+        		<a-animation attribute="rotation" direction="normal" dur="5000" repeat="indefinite" to="0 360 0"></a-animation>
+      		</a-entity>
+      		
+
+      		<a-link href="escena2.html" title="Fes clic aqui" image="" peekMode="false" position="-2 2 -3"></a-link>
+
+      		<a-camera>
+        		<a-cursor color="#00ff00"></a-cursor>
+      		</a-camera>
+
+    	</a-scene>
+    </BODY>
+  <HTML>
