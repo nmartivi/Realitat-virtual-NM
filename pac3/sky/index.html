@@ -20,11 +20,15 @@
         <a-sky id="image-360" radius="10" src="#paisatge"></a-sky>
       
         <a-sphere position="-4.5 0 -4" src="#iceTexture">
-           <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite" to="-4.5 4 -4"></a-animation>
+           <a-animation attribute="position" begin="mouseenter" direction="alternate" dur="2000" to="-4.5 4 -4"></a-animation>
         </a-sphere>
       
         <a-sphere position="-1.5 0 -4" src="#iceTexture"></a-sphere>
         <a-sphere position="1.5 0 -4" src="#iceTexture"></a-sphere>
+      
+        <a-camera>
+        		<a-cursor color="#00ff00"></a-cursor>
+      		</a-camera>
       
     	</a-scene>
     </BODY>
