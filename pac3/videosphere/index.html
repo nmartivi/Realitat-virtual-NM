@@ -14,9 +14,32 @@
 
             <a-assets>
                 <video id="video" autoplay loop="true" src="video360.mp4">
+                 <img id="waterTexture" src="water.jpg">
             </a-assets>
 
             <a-videosphere src="#video"></a-videosphere>
+             
+            <!--- <a-text value="Fes clic a les esferes" color="#ffffff" position="-4.5 3 -4" scale="3 3 3"></a-text> --->
+      
+            <!--- Cilindres --->
+
+             <a-cylinder position="-4.5 -4 -4" src="#waterTexture">
+                <!--- <a-animation attribute="position" begin="click" direction="alternate" dur="2000" repeat="1" to="-4.5 4 -4"></a-animation> --->
+             </a-sphere>
+
+             <a-cylinder position="-1.5 -4 -4" rotation="0 0 0" src="#waterTexture">
+                 <!--- <a-animation attribute="rotation" begin="click" direction="alternate" dur="2000" repeat="1" to="180 0 0"></a-animation> --->
+             </a-sphere>
+
+             <a-cylinder position="1.5 -4 -4" src="#waterTexture">
+                 <!--- <a-animation attribute="scale" begin="click" direction="alternate" dur="2000" repeat="1" to="2 2 2"></a-animation> --->
+             </a-sphere>
+
+           <!--- Cursor --->
+
+             <a-camera>
+               <a-cursor color="#00ff00"></a-cursor>
+             </a-camera>
     
     	</a-scene>
     </BODY>
