@@ -20,7 +20,10 @@
 
         <a-sky id="image-360" radius="10" src="#paisatge"></a-sky>
       
-        <a-entity geometry="primitive: sphere" position="-4.5 0 -4" src="#iceTexture"></a-entity>
+        <a-entity geometry="primitive: sphere" position="-4.5 0 -4" src="#iceTexture">
+           <a-animation attribute="position" dur="2000" repeat="indefinite" to="-4.5 4 -4"></a-animation>
+        </a-entity>
+      
         <a-entity geometry="primitive: sphere" position="-1.5 0 -4" src="#iceTexture"></a-entity>
         <a-entity geometry="primitive: sphere" position="1.5 0 -4" src="#iceTexture"></a-entity>
       
