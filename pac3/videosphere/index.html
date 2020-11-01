@@ -15,15 +15,16 @@
 
             <a-assets>
                 <video id="video" autoplay loop="true" src="video360.mp4">
+                 <img id="spaceTexture" src="space.jpg">
             </a-assets>
 
             <a-videosphere src="#video"></a-videosphere>
              
             <a-text value="Mira cap amunt" color="#ffffff" position="-3 3 -4" scale="3 3 3"></a-text>
                  
-            <a-sphere position="0 20 0">
-                 <a-animation attribute="position" dur="10000" repeat="1" to="0 5 0"></a-animation>
-                 <a-animation attribute="scale" dur="10000" repeat="1" to="5 5 5"></a-animation>
+            <a-sphere position="0 20 0" src="#spaceTexture">
+                 <a-animation attribute="position" dur="20000" repeat="1" to="0 5 0"></a-animation>
+                 <a-animation attribute="scale" dur="20000" repeat="1" to="5 5 5"></a-animation>
             </a-sphere>
             
 
