@@ -1,33 +1,27 @@
- <HTML>
-
- 	<!--- PAC 4 - Realitat virtual --->
- 	<!--- Podeu veure l'escena funcionant a https://nmartivi.github.io/Realitat-virtual-NM --->
-
-    <HEAD>   
-    	<title>PAC 4</title>
-      <style> #arjsDebugUIContainer{ display:none; } </style>
-    </HEAD>
-
-    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
-
-    <BODY style='margin : 0px; overflow: hidden;'>
-    	 <a-scene embedded arjs>
-          
-         <!--- PRESET HIRO --->
-          <a-marker preset="hiro">
-            <a-box position='0 0.5 0' material='color: cyan; opacity: 0.5'></a-box>
-          </a-marker>
-
-          <!--- MARKER --->
-
-          <a-marker type='pattern' url='pattern-marker.patt'>
-             <!--- <a-marker type='pattern' url='pattern-logo.patt'>  --->
+<!doctype HTML>
+<html>
+<head><style> #arjsDebugUIContainer{ display:none; } </style></head>
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+   
+    <a-scene embedded arjs>
+      <a-assets>
+        <img id="boxTexture" src="oxid.png">
+      </a-assets>
+     
+  	<a-marker preset='hiro'>
+            <a-box position='0 0.5 0' scale="0.5 0.5 0.5" rotation="45 45 45" material='color: cyan;' src="#boxTexture">		
+		<a-animation attribute="rotation" dur="1000" to="360 45 45" repeat="indefinite"></a-animation>
+	</a-box>
+  	</a-marker>
+     
+  	<a-marker type='pattern' url='pattern-marker.patt'>
             <a-box position='0 0.5 0' material='color: red; opacity: 0.5'></a-box>
-          </a-marker>
-    
-          <a-entity camera></a-entity>
-
-      </a-scene>
-    </BODY>
-  <HTML>
+  	</a-marker>
+     
+  	<a-entity camera></a-entity>
+     
+    </a-scene>
+  </body>
+</html>
