@@ -8,6 +8,7 @@
     <a-scene embedded arjs>
       <a-assets>
         <img id="boxTexture" src="oxid.png">
+	<a-asset-item id="objecte2-obj" src="objecte2.obj"></a-asset-item>
       </a-assets>
      
   	<a-marker preset='hiro'>
@@ -17,7 +18,13 @@
   	</a-marker>
      
   	<a-marker type='pattern' url='pattern-cercle.patt'>
-            <a-box position='0 0.5 0' material='color: red; opacity: 0.5'></a-box>
+            <a-entity 
+		  obj-model="obj: #objecte2-obj"
+		  material="color: red; opacity: 0.8"
+		  position="0 0.5 0"
+		  rotation="45 45 0"
+		  scale="0.3 0.3 0.3">
+            </a-entity>
   	</a-marker>
 	    
 	<a-marker type='pattern' url='pattern-triangle.patt'>
