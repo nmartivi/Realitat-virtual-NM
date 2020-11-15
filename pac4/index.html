@@ -7,14 +7,14 @@
    
     <a-scene embedded arjs>
       <a-assets>
-        <img id="boxTexture" src="oxid.png">
+        <img id="boxTexture" src="water.jpg">
 	<img id="texturaColor" src="colors.png">
 	<a-asset-item id="objecte2-obj" src="objecte2.obj"></a-asset-item>
       </a-assets>
      
   	<a-marker preset='hiro'>
-            <a-box position='0 0.5 0' scale="0.5 0.5 0.5" rotation="45 45 45" material='color: cyan;' src="#boxTexture">		
-		<a-animation attribute="rotation" dur="1000" to="360 45 45" repeat="indefinite"></a-animation>
+            <a-box position='0 0.5 0' scale="0.7 0.7 0.7" rotation="45 45 45" material='color: cyan;' src="#boxTexture">		
+		<a-animation attribute="rotation" direction="alternate" dur="1000" to="360 45 45" repeat="indefinite"></a-animation>
 	</a-box>
   	</a-marker>
      
