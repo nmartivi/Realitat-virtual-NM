@@ -15,7 +15,7 @@
   	<a-marker preset='hiro'>
             <a-box position='0 0.5 0' scale="0.7 0.7 0.7" rotation="45 45 45" material='color: cyan;' src="#boxTexture">		
 		<a-animation attribute="rotation" direction="alternate" dur="1000" to="360 45 45" repeat="indefinite"></a-animation>
-	</a-box>
+	    </a-box>
   	</a-marker>
      
   	<a-marker type='pattern' url='pattern-cercle.patt'>
@@ -29,8 +29,10 @@
   	</a-marker>
 	    
 	<a-marker type='pattern' url='pattern-triangle.patt'>
-	    <a-box position='0 0.5 0' scale="0.5 0.5 0.5" rotation="45 45 45" src="#texturaColor"></a-box>	
-	    <a-animation attribute="rotation" direction="alternate" dur="1000" to="360 45 45" repeat="indefinite"></a-animation>
+	    <a-box position='0 0.5 0' scale="0.5 0.5 0.5" rotation="45 45 45" src="#texturaColor">
+		<a-animation attribute="scale" direction="alternate" dur="200" to="3 3 3" repeat="indefinite"></a-animation>
+	    </a-box>	
+	    
     	</a-marker>
      
   	<a-entity camera></a-entity>
