@@ -21,6 +21,16 @@
 	    </a-box>
   	</a-marker>
 	    
+	<a-marker type='pattern' url='pattern-cercle.patt'>
+            <a-entity 
+		  obj-model="obj: #objecte2-obj"
+		  material="color: cyan; opacity: 0.8"
+		  position="0 0.5 0"
+		  rotation="45 45 0"
+		  scale="0.4 0.4 0.4">
+            </a-entity>
+  	</a-marker>
+	    
 	<a-marker type='pattern' url='pattern-triangle.patt'>
 	    <a-box position='0 0.5 0' scale="0.5 0.5 0.5" rotation="45 45 45" src="#texturaColor">
 		<a-animation attribute="scale" direction="alternate" dur="2000" to="2 2 2" repeat="indefinite"></a-animation>
@@ -33,16 +43,7 @@
 	     </a-box>
         </a-marker>
 	    
-	<a-marker type='pattern' url='pattern-cercle.patt'>
-            <a-entity 
-		  obj-model="obj: #objecte2-obj"
-		  material="color: cyan; opacity: 0.8"
-		  position="0 0.5 0"
-		  rotation="45 45 0"
-		  scale="0.4 0.4 0.4"
-            </a-entity>
-  	</a-marker>
-     
+	
   	<a-entity camera></a-entity>
      
     </a-scene>
