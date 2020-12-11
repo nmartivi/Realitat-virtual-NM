@@ -1,9 +1,9 @@
 <HTML>
 
- 	<!---HABITACIÓ 1--->
+ 	<!---MENJADOR--->
  	
     <HEAD>   
-      <title>Habitció 1</title>
+      <title>Menjador</title>
       <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
       <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
       <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js">  </script>
@@ -15,35 +15,20 @@
 
           <!--- ASSETS --->
           <a-assets>
-            <img id="terrassa" src="recursos/terrassa.jpeg">
-            <img id="infoPiscina" src="recursos/1_info_piscina.jpg">
-            <img id="infoTerrassa" src="recursos/1_info_terrassa.jpg">
-            <img id="infoVistes" src="recursos/1_info_vistes.jpg">
-            <img id="info" src="recursos/info.jpg">
-            <img id="clicSo" src="recursos/clic_so.jpg">
+            <img id="menjador" src="recursos/menjador.jpeg">
+            <img id="infoMenjador" src="recursos/2_info_menjador.jpg">
+            <img id="infoZonaestar" src="recursos/2_info_zonadestar.jpg">
+           
+
           </a-assets>
 
           <!--- SKY --->
-          <a-sky id="image-360" radius="10" src="#terrassa"></a-sky>
+          <a-sky id="image-360" radius="10" src="#menjador"></a-sky>
 
           <!--- INFORMACIÓ ---->
-          <a-image src="#infoPiscina" position="1 1 1" rotation="0 0 0" scale="1 1 1">
+          <a-image src="#infoMenjador" position="1 1 1" rotation="0 0 0" scale="1 1 1">
             <a-animation attribute="scale" begin="click" direction="alternate" dur="2000" repeat="0" to="1 1 1"></a-animation>
           </a-image>
-
-          <!---
-          <a-image src="#infoTerrassa" position="1 1 1" rotation="0 0 0" scale="1 1 1">
-            <a-animation attribute="scale" begin="click" direction="alternate" dur="2000" repeat="0" to="1 1 1"></a-animation>
-          </a-image>
-
-          <a-image src="#infoVistes" position="1 1 1" rotation="0 0 0" scale="1 1 1">
-            <a-animation attribute="scale" begin="click" direction="alternate" dur="2000" repeat="0" to="1 1 1"></a-animation>
-          </a-image>
-
-          <a-image src="#infoPiscina" position="1 1 1" rotation="0 0 0" scale="1 1 1"></a-image>
-
-          <a-image src="#infoPiscina" position="1 1 1" rotation="0 0 0" scale="1 1 1"></a-image>
-          ---->
 
 
           <!--- CÀMERA --->
