@@ -1,0 +1,45 @@
+<!doctype HTML>
+<html>
+	
+<!--- PAC 4 - Realitat virtual --->
+<!--- Podeu veure l'escena funcionant a https://nmartivi.github.io/Realitat-virtual-NM --->
+	
+<head><style> #arjsDebugUIContainer{ display:none; } </style></head>
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  
+<body style='margin : 0px; overflow: hidden;'>
+   
+    <a-scene embedded arjs>  	
+		    
+		<a-marker type='pattern' url='recursos/pattern-pattern1.patt'>
+	        <a-box position='0 0 0' scale="0 0 0" rotation="0 0 0" material="color: cyan;">
+			    <a-animation attribute="scale" direction="alternate" dur="2000" to="2 2 2" repeat="indefinite"></a-animation>
+		    </a-box>	
+	  	</a-marker>
+
+	  	<a-marker type='pattern' url='recursos/pattern-pattern2.patt'>
+	        <a-box position='0 0 0' scale="0 0 0" rotation="0 0 0" material="color: cyan;">
+			    <a-animation attribute="scale" direction="alternate" dur="2000" to="2 2 2" repeat="indefinite"></a-animation>
+		    </a-box>	
+	  	</a-marker>
+
+	  	<a-marker type='pattern' url='recursos/pattern-pattern2.patt'>
+	        <a-box position='0 0 0' scale="0 0 0" rotation="0 0 0" material="color: cyan;">
+			    <a-animation attribute="scale" direction="alternate" dur="2000" to="2 2 2" repeat="indefinite"></a-animation>
+		    </a-box>	
+	  	</a-marker>
+
+	  	<a-marker type='pattern' url='recursos/pattern-pattern2.patt'>
+	        <a-box position='0 0 0' scale="0 0 0" rotation="0 0 0" material="color: cyan;">
+			    <a-animation attribute="scale" direction="alternate" dur="2000" to="2 2 2" repeat="indefinite"></a-animation>
+		    </a-box>	
+	  	</a-marker>
+		    
+		    
+	  	<a-entity camera></a-entity>
+     
+    </a-scene>
+	
+  </body>
+</html>
